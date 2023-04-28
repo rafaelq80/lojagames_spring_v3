@@ -36,6 +36,7 @@ public class ProdutoController {
 	@GetMapping("/all")
 	public ResponseEntity<List<Produto>> getAll(){
 		return ResponseEntity.ok(produtoRepository.findAll());
+		
 	}
 	
 	@GetMapping("/{id}")
